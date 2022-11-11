@@ -5,7 +5,6 @@ import os
 import csv
 import unittest
 
-#here is the final commit
 def get_listings_from_search_results(html_file):
     """
     Write a function that creates a BeautifulSoup object on html_file. Parse
@@ -242,7 +241,6 @@ def extra_credit(listing_id):
                 count_dic[i.text[-4:]] += 1
             else: 
                 count_dic[i.text[-4:]] = 1
-        print(count_dic)
         #run through the values in dic and see if one is greater than 90
         for year in count_dic.items():
             if year[1] > 90:
@@ -373,7 +371,7 @@ if __name__ == '__main__':
     database = get_detailed_listing_database("html_files/mission_district_search_results.html")
     write_csv(database, "airbnb_dataset.csv")
     check_policy_numbers(database)
-    print(extra_credit('1944564'))
-    print(extra_credit('16204265'))
+    extra_credit('1944564')
+    extra_credit('16204265')
     unittest.main(verbosity=2)
 
