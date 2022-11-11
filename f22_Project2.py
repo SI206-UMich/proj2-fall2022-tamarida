@@ -5,7 +5,7 @@ import os
 import csv
 import unittest
 
-#here is 
+#here is the
 def get_listings_from_search_results(html_file):
     """
     Write a function that creates a BeautifulSoup object on html_file. Parse
